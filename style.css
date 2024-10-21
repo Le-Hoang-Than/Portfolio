@@ -143,7 +143,7 @@ h5 {
 } */
 @font-face {
   font-family: "DancingScript";
-  src: url(/fonts/DancingScript/DancingScript-Regular.ttf);
+  src: url(./fonts/DancingScript/DancingScript-Regular.ttf);
 }
 .brand{
   flex-basis: 50%;
