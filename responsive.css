@@ -1,0 +1,170 @@
+/* Phone (dưới 600px) */
+@media (max-width: 600px) {
+/* Begin Nav Bar Section */
+.nav-list-top {
+  display: none;
+}
+.nav-list-content .icon img{
+  padding: 0.1rem;
+  }  
+/* End Nav Bar Section */
+
+  /* Start Header Section */
+  .wrapper {
+    padding: 0;
+  }
+  #Header {
+    margin: 0;
+  }
+  .header-back {
+    bottom: 0px;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+  .header-action-aria {
+    padding: 0;
+  }
+  /* End Header Section */
+
+  /* Start About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  /* End About Section */
+
+  /* Begin Experience Section */
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+  .experience-box {
+    flex-direction: column;
+  }
+  /* End Experience Section */
+
+/* Begin Project Section */
+.project-content {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.project-bottom{
+  grid-column: span 1;
+}
+.popup video {
+  width: 100%;
+}
+
+/* End Project Section */
+
+
+  /* Begin Certificate Section */
+  .certificate-content{
+    gap: 3rem;
+  }
+  .certificate-item:nth-of-type(n) {
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 57, 122, 0.1) 0%, white 50%);
+  }
+  .certificate-item:nth-of-type(-n + 2) .certificate-img {
+    display: none;
+  }
+  /* End Certificate Section */
+
+  /* Start Contact Section*/
+  #Contact .contact-items {
+    grid-template-columns: 1fr;
+  }
+  /* End Contact Section*/
+}
+
+/* Tablet (600px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Begin Nav Bar Section */
+.nav-list-top {
+  display: none;
+}
+.nav-list-content .icon img{
+  padding: 0.1rem;
+  }
+  
+/* End Nav Bar Section */
+
+  /* Start Header Section */
+  .wrapper {
+    padding: 0;
+  }
+  #Header {
+    margin: 0;
+  }
+  body {
+    margin: 0vh;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+  .header-back {
+    bottom: 0px;
+  }
+  /* End Header Section */
+
+  /* Start About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .about-specialize {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* End About Section */
+
+  /* Begin Experience Section */
+  .certificate-content{
+    gap: 3rem;
+  }
+
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+  .experience-box {
+    flex-direction: column;
+  }
+  
+  /* End Experience Section */
+
+/* Begin Project Section */
+.project-content {
+  grid-template-columns: 1fr;
+  gap: 3rem
+}
+.project-bottom{
+  grid-column: span 1;
+}
+
+/* End Project Section */
+
+
+  /* Begin Certificate Section */
+  .certificate-item:nth-of-type(n) {
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 57, 122, 0.1) 0%, white 50%);
+  }
+  .certificate-item:nth-of-type(-n + 2) .certificate-img {
+    display: none;
+  }
+  /* End Certificate Section */
+
+  /* Start Contact Section*/
+  #Contact .contact-items {
+    grid-template-columns: 1fr;
+    
+  }
+  /* End Contact Section*/
+}
+
+/* Desktop (trên 1024px) */
+@media (min-width: 1025px) {
+  /* Begin Nav Bar Section */
+.nav-list-bottom {
+  display: none;
+}
+/* End Nav Bar Section */
+}
