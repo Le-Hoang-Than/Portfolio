@@ -1,13 +1,13 @@
 /* Phone (dưới 600px) */
 @media (max-width: 600px) {
-/* Begin Nav Bar Section */
-.nav-list-top {
-  display: none;
-}
-.nav-list-content .icon img{
-  padding: 0.1rem;
-  }  
-/* End Nav Bar Section */
+  /* Begin Nav Bar Section */
+  .nav-list-top {
+    display: none;
+  }
+  .nav-list-content .icon img {
+    padding: 0.1rem;
+  }
+  /* End Nav Bar Section */
 
   /* Start Header Section */
   .wrapper {
@@ -33,32 +33,45 @@
   }
   /* End About Section */
 
+  /* Begin Service Section */
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .services-list h3{
+    grid-column: span 1;
+  }  
+  .service-describe{
+    grid-template-columns: 1fr;
+  }
+  /* End Service Section */
+
+
   /* Begin Experience Section */
   .experience-content {
     grid-template-columns: 1fr;
   }
   .experience-box {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   /* End Experience Section */
 
-/* Begin Project Section */
-.project-content {
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-.project-bottom{
-  grid-column: span 1;
-}
-.popup video {
-  width: 100%;
-}
+  /* Begin Project Section */
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .project-bottom {
+    grid-column: span 1;
+  }
+  .popup video {
+    width: 100%;
+  }
 
-/* End Project Section */
-
+  /* End Project Section */
 
   /* Begin Certificate Section */
-  .certificate-content{
+  .certificate-content {
     gap: 3rem;
   }
   .certificate-item:nth-of-type(n) {
@@ -73,6 +86,7 @@
   /* Start Contact Section*/
   #Contact .contact-items {
     grid-template-columns: 1fr;
+    grid-template-rows:repeat(3,1fr) ;
   }
   /* End Contact Section*/
 }
@@ -80,14 +94,14 @@
 /* Tablet (600px - 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   /* Begin Nav Bar Section */
-.nav-list-top {
-  display: none;
-}
-.nav-list-content .icon img{
-  padding: 0.1rem;
+  .nav-list-top {
+    display: none;
   }
-  
-/* End Nav Bar Section */
+  .nav-list-content .icon img {
+    padding: .3rem;
+  }
+
+  /* End Nav Bar Section */
 
   /* Start Header Section */
   .wrapper {
@@ -116,8 +130,22 @@
   }
   /* End About Section */
 
+  /* Begin Service Section */
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .services-list h3{
+    grid-column: span 1;
+  }  
+  .service-describe{
+    grid-template-columns: 3fr 1fr;
+
+  }
+  /* End Service Section */
+
+
   /* Begin Experience Section */
-  .certificate-content{
+  .certificate-content {
     gap: 3rem;
   }
 
@@ -127,20 +155,19 @@
   .experience-box {
     flex-direction: column;
   }
-  
+
   /* End Experience Section */
 
-/* Begin Project Section */
-.project-content {
-  grid-template-columns: 1fr;
-  gap: 3rem
-}
-.project-bottom{
-  grid-column: span 1;
-}
+  /* Begin Project Section */
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .project-bottom {
+    grid-column: span 1;
+  }
 
-/* End Project Section */
-
+  /* End Project Section */
 
   /* Begin Certificate Section */
   .certificate-item:nth-of-type(n) {
@@ -153,9 +180,8 @@
   /* End Certificate Section */
 
   /* Start Contact Section*/
-  #Contact .contact-items {
+  .contact-items {
     grid-template-columns: 1fr;
-    
   }
   /* End Contact Section*/
 }
@@ -163,8 +189,8 @@
 /* Desktop (trên 1024px) */
 @media (min-width: 1025px) {
   /* Begin Nav Bar Section */
-.nav-list-bottom {
-  display: none;
-}
-/* End Nav Bar Section */
+  .nav-list-bottom {
+    display: none;
+  }
+  /* End Nav Bar Section */
 }
