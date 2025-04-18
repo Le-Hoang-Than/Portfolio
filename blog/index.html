@@ -1,0 +1,86 @@
+
+<!-- Home, News, Kiến thức nền tảng(Network, Security, Cryptography, Mathematics, Operating Systems), tools, CTF, my roadmap, portfolio. -->
+<ul className="navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/news">News</a></li>
+    <li><a href="/knowledge/network">Kiến thức nền tảng</a>
+      <ul>
+        <li><a href="/knowledge/network">Network</a></li>
+        <li><a href="/knowledge/security">Security</a></li>
+        <li><a href="/knowledge/cryptography">Cryptography</a></li>
+        <li><a href="/knowledge/mathematics">Mathematics</a></li>
+        <li><a href="/knowledge/operating-systems">Operating Systems</a></li>
+      </ul>
+    </li>
+    <li><a href="/tools">Tools</a></li>
+    <li><a href="/ctf">CTF</a></li>
+    <li><a href="/roadmap">My Roadmap</a></li>
+    <li><a href="/portfolio">Portfolio</a></li>
+  </ul>
+  
+<pre>
+    /project-root
+    │
+    ├── index.html                            # Trang chủ
+    ├── news.html                             # Tin tức / cập nhật
+    ├── tools.html                            # Các công cụ tự viết hoặc tổng hợp
+    ├── ctf.html                              # CTF writeups
+    ├── myroadmap.html                        # Lộ trình học tập cá nhân
+    ├── portfolio.html                        # Portfolio cá nhân
+    │
+    ├── /knowledge                            # Chuyên mục kiến thức nền tảng
+    │   ├── knowledge.html                    # Trang chọn category
+    │   ├── /network
+    │   │   ├── index.html                    # Chọn tag (VD: TCP, DNS...)
+    │   │   ├── tcp.html
+    │   │   ├── dns.html
+    │   │   └── network.css / network.js
+    │   ├── /security
+    │   │   ├── index.html
+    │   │   ├── xss.html
+    │   │   ├── csrf.html
+    │   │   └── security.css / security.js
+    │   ├── /cryptography
+    │   │   ├── index.html
+    │   │   ├── aes.html
+    │   │   ├── rsa.html
+    │   │   └── crypto.css / crypto.js
+    │   ├── /mathematics
+    │   │   ├── index.html
+    │   │   ├── calculus.html
+    │   │   ├── discrete.html
+    │   │   └── math.css / math.js
+    │   └── /operating-systems
+    │       ├── index.html
+    │       ├── memory.html
+    │       ├── filesystem.html
+    │       └── os.css / os.js
+    │
+    ├── /components
+    │   ├── navbar.html
+    │   ├── footer.html
+    │   ├── navbar-left.html        # Navbar bên trái
+    │   ├── navbar-right.html       # Navbar bên phải
+    │   └── feedback-form.html
+    │
+    ├── /assets
+    │   ├── /css
+    │   │   ├── style.css                  # CSS chung toàn site
+    │   │   ├── news.css                   # Trang news
+    │   │   ├── tools.css
+    │   │   └── roadmap.css
+    │   ├── /js
+    │   │   ├── script.js                 # JS chung (navbar, darkmode,...)
+    │   │   ├── navbar.js
+    │   │   ├── footer.js
+    │   │   ├── feedback.js
+    │   │   ├── news.js
+    │   │   └── roadmap.js
+    │   └── /images
+    │       └── logo.png
+    │
+    ├── /data
+    │   └── tags.json                     # Metadata bài viết: title, slug, path, tags
+    │
+    └── feedback.html                     # (tùy chọn) trang feedback độc lập
+</pre>
