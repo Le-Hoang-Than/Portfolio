@@ -672,12 +672,12 @@ img:hover {
   width: 100%;
 }
 .project-demo {
-  height: 20rem;
   border-radius: 4px;
   overflow: hidden;
 }
 .project img {
-  object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 .project-describe {
   text-align: left;
@@ -700,8 +700,11 @@ img:hover {
   margin: 0 auto;
   cursor: pointer;
   text-decoration: underline;
-  background-color: transparent;
+  background-color: #e5ebf1;
+  padding: 0.2rem 1rem;
+  border-radius: 30px;
 }
+
 .detail-content ul li {
   padding-left: 1rem;
 }
