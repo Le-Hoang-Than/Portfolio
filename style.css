@@ -281,7 +281,7 @@ img:hover {
   /* letter-spacing: 0.2rem; */
   /* line-height: 140%; */
   /* font-size: 1rem; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 900;
   color: var(--color-dark);
 }
