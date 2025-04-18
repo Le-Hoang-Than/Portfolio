@@ -275,12 +275,12 @@ img:hover {
 .nav-list-top ul {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .nav-list-top ul a {
   /* letter-spacing: 0.2rem; */
-  line-height: 140%;
-  font-size: 1rem;
+  /* line-height: 140%; */
+  /* font-size: 1rem; */
   text-transform: uppercase;
   font-weight: 900;
   color: var(--color-dark);
