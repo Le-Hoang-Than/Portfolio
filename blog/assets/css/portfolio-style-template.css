@@ -1029,7 +1029,7 @@ td {
 @media (min-width: 1025px) {
   /* Begin Nav Bar Section */
   .nav-list-bottom {
-    /* display: none; */
+    display: none;
   }
   /* End Nav Bar Section */
 }
