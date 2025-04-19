@@ -771,35 +771,35 @@ th {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   padding: 1rem;
-  .contact-item {
-    align-self: stretch;
-    box-shadow: 0px 0px 8px 0px var(--color-dark-variant);
-    border-radius: 4px;
-    transition: 0.3s ease box-shadow;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.contact-item {
+  align-self: stretch;
+  box-shadow: 0px 0px 8px 0px var(--color-dark-variant);
+  border-radius: 4px;
+  transition: 0.3s ease box-shadow;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 1rem;
-    .contact-title {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      .icon {
-        width: 30px;
-        height: 30px;
-      }
-    }
-  }
-  .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 #0000002c;
-  }
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+  gap: 1rem;
+}
+.contact-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-title .icon {
+  width: 30px;
+  height: 30px;
+}
+.contact-item:hover {
+  box-shadow: 0px 0px 5px 0 #0000002c;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 /*End Contact Section */
 
@@ -811,49 +811,226 @@ th {
   grid-template-columns: 1fr;
   align-items: center;
   padding: 1rem;
-  .author-info {
-    font-size: 4vw;
-    font-weight: 900;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    align-items: center;
-
-    table {
-      border-collapse: collapse;
-
-      th,
-      td {
-        margin: 1rem;
-      }
-
-      tr {
-        border: 1px solid var(--color-dark);
-      }
-    }
-  }
 }
+.author-info {
+  font-size: 4vw;
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.author-info table {
+  border-collapse: collapse;
+}
+.author-info th,
+td {
+  margin: 1rem;
+}
+.author-info tr {
+  border: 1px solid var(--color-dark);
+}
+
 /* End Footer Section */
 
-/* certificate */
-/* @media only screen and (min-width: 768px) {
-  #Certificate .certificate-item {
-    flex-direction: row;
+
+/* Begin Responsive */
+/* Phone (dưới 600px) */
+@media (max-width: 600px) {
+  /* Begin Nav Bar Section */
+  .nav-list-top {
+    display: none;
   }
-  #Certificate .certificate-item:nth-child(even) {
-    flex-direction: row-reverse;
+  .nav-list-content .icon img {
+    padding: 0.1rem;
   }
-  #Certificate .certificate-item {
-    height: 400px;
+  /* End Nav Bar Section */
+
+  /* Start Header Section */
+  .wrapper {
+    padding: 0;
+  }
+  #Header {
     margin: 0;
+  }
+  .header-back {
+    bottom: 0px;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+  .header-action-aria {
+    padding: 0;
+  }
+  /* End Header Section */
+
+  /* Start About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  /* End About Section */
+
+  /* Begin Service Section */
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .services-list h3{
+    grid-column: span 1;
+  }  
+  .service-describe{
+    grid-template-columns: 1fr;
+  }
+  /* End Service Section */
+
+
+  /* Begin Experience Section */
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+  .experience-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  /* End Experience Section */
+
+  /* Begin Project Section */
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .project-bottom {
+    grid-column: span 1;
+  }
+  .popup video {
     width: 100%;
-    border-radius: 0;
   }
-  #Certificate .certificate-content .certificate-info {
-    height: 100%;
+
+  /* End Project Section */
+
+  /* Begin Certificate Section */
+  .certificate-content {
+    gap: 3rem;
   }
-  #Certificate .certificate-content .certificate-img {
-    height: 100%;
+  .certificate-item:nth-of-type(n) {
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 57, 122, 0.1) 0%, white 50%);
   }
-} */
-/* End certificate */
+  .certificate-item:nth-of-type(-n + 2) .certificate-img {
+    display: none;
+  }
+  /* End Certificate Section */
+
+  /* Start Contact Section*/
+  #Contact .contact-items {
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3,1fr) ;
+  }
+  /* End Contact Section*/
+}
+
+/* Tablet (600px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Begin Nav Bar Section */
+  .nav-list-top {
+    display: none;
+  }
+  .nav-list-content .icon img {
+    padding: .3rem;
+  }
+
+  /* End Nav Bar Section */
+
+  /* Start Header Section */
+  .wrapper {
+    padding: 0;
+  }
+  #Header {
+    margin: 0;
+  }
+  body {
+    margin: 0vh;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+  .header-back {
+    bottom: 0px;
+  }
+  /* End Header Section */
+
+  /* Start About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .about-specialize {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* End About Section */
+
+  /* Begin Service Section */
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .services-list h3{
+    grid-column: span 1;
+  }  
+  .service-describe{
+    grid-template-columns: 3fr 1fr;
+
+  }
+  /* End Service Section */
+
+
+  /* Begin Experience Section */
+  .certificate-content {
+    gap: 3rem;
+  }
+
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+  .experience-box {
+    flex-direction: column;
+  }
+
+  /* End Experience Section */
+
+  /* Begin Project Section */
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .project-bottom {
+    grid-column: span 1;
+  }
+
+  /* End Project Section */
+
+  /* Begin Certificate Section */
+  .certificate-item:nth-of-type(n) {
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 57, 122, 0.1) 0%, white 50%);
+  }
+  .certificate-item:nth-of-type(-n + 2) .certificate-img {
+    display: none;
+  }
+  /* End Certificate Section */
+
+  /* Start Contact Section*/
+  .contact-items {
+    grid-template-columns: 1fr;
+  }
+  /* End Contact Section*/
+}
+
+/* Desktop (trên 1024px) */
+@media (min-width: 1025px) {
+  /* Begin Nav Bar Section */
+  .nav-list-bottom {
+    display: none;
+  }
+  /* End Nav Bar Section */
+}
+
+/* End Responsive */
+
